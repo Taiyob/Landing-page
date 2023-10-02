@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplex Solution</title>    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="px-44">
+        <div class="navbar bg-white rounded-box">
+            <div class="flex-1 px-2 lg:flex-none">
+              <a class="text-lg font-bold">
+                <img class="max-w-[75px] h-auto" src="./images/logo.png" alt="">
+              </a>
+            </div> 
+            <div class="flex justify-end flex-1 px-2">
+              <div class="flex items-stretch">
+                <a class="btn btn-ghost rounded-btn">Home</a>
+                <a class="btn btn-ghost rounded-btn">About</a>
+                <a class="btn btn-ghost rounded-btn">Contact</a>
+                <a class="btn btn-ghost rounded-btn">Client</a>
+                <div class="dropdown dropdown-end">
+                  <label tabindex="0" class="btn btn-ghost rounded-btn">Service</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider mt-20">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full h-[500px]">
+                  <img src="./images/banner1.jpg" class="w-full" alt=""/>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full h-[500px]">
+                  <img src="./images/banner2.jpg" class="w-full" alt=""/>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full h-[500px]">
+                  <img src="./images/banner3.png" class="w-full" alt=""/>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full h-[500px]">
+                  <img src="./images/banner4.png" class="w-full" alt=""/>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </header>
+    <main class="px-44">
+        <section class="mt-20">
+            <div class="content">
+                <h2 class="text-4xl font-extrabold mb-5 text-center">
+                    How does it works
+                 </h2>
+                 <p class="lg:max-w-2xl text-center mx-auto mb-10 text-[#777] text-2xl">
+                    One theme that serves as an easy-to-use operational toolkit
+                    that meets customer's needs. 
+                 </p>
+            </div>
+            <div class="grid grid-cols-3 gap-5">
+                <div>
+                    <div class="space-y-5">
+                        <img src="./images/Group12.svg" alt="">
+                        <h4 class="font-bold text-3xl">
+                            Speed Optimisation
+                        </h4>
+                        <p class="text-[#777]">
+                            Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.
+                        </p>
+                    </div>
+                    <a class="mt-10" href="#">Readmore</a>
+                </div>
+                <div>
+                    <div class="space-y-5">
+                        <img src="./images/Group7.svg" alt="">
+                        <h4 class="font-bold text-3xl">
+                            SEO and Backlinks
+                        </h4>
+                        <p class="text-[#777]">
+                            Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.
+                        </p>
+                    </div>
+                    <a class="mt-10" href="#">Readmore</a>
+                </div>
+                <div>
+                    <div class="space-y-5">
+                        <img src="./images/Group5.svg" alt="">
+                        <h4 class="font-bold text-3xl">
+                            Content Marketing
+                        </h4>
+                        <p class="text-[#777]">
+                            Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.
+                        </p>
+                    </div>
+                    <a class="mt-10" href="#">Readmore</a>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20">
+            <div class="hero">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="./images/Group1.png" class="max-w-sm rounded-lg shadow-2xl" alt=""/>
+                  <div>
+                    <h1 class="text-5xl font-bold">
+                        We Offer a Full Range of Digital Marketing Services!
+                    </h1>
+                    <p class="py-6">
+                        Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.
+                    </p>
+                    <p class="font-semibold">
+                        Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero px-25">
+                <div class="hero-content flex-col lg:flex-row gap-25">
+                  <img src="./images/Group2.png" class="max-w-sm rounded-lg shadow-2xl mr-20" alt=""/>
+                  <div>
+                    <h1 class="text-5xl font-bold">
+                        Leading Digital Agency for Business Solution.
+                    </h1>
+                    <p class="py-6">
+                        Power-packed with impressive features and well-optimized, this template is designed to provide the best performance in all circumstances.
+                    </p>
+                    <p>
+                        Its smart features make it a powerful stand-alone website building tool.
+                    </p>
+                    <button class="btn btn-primary">Read More</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="mt-20">
+            <div class="content">
+                <h2 class="text-4xl font-semibold mb-5 text-center">
+                    Our case studies
+                 </h2>
+                 <p class="lg:max-w-2xl text-center mx-auto mb-10 text-[#777] text-2xl">
+                    Lorem ipsum dolor sit amet, tincidunt vestibulum.
+                 </p>
+            </div>
+            <div class="grid grid-cols-4 gap-5">
+                <div class="card w-96 bg-[#000637] shadow-xl">
+                    <figure><img src="./images/Group95.svg" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title text-white">Know more about Online marketing</h2>
+                      <div class="card-actions justify-end">
+                        <!-- <button class="btn btn-primary">Buy Now</button> -->
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-[#ffad00] shadow-xl">
+                    <figure><img src="./images/Group108.svg" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title text-white">Know more about Web Development</h2>
+                      <div class="card-actions justify-end">
+                        <!-- <button class="btn btn-primary">Buy Now</button> -->
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-[#bbbbf2] shadow-xl">
+                    <figure><img src="./images/Group115.svg" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title text-white">Know more about Web Designing</h2>
+                      <div class="card-actions justify-end">
+                        <!-- <button class="btn btn-primary">Buy Now</button> -->
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-[#5ed6b3] shadow-xl">
+                    <figure><img src="./images/Group126.svg" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title text-white">Know more about Software Development</h2>
+                      <div class="card-actions justify-end">
+                        <!-- <button class="btn btn-primary">Buy Now</button> -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20">
+            <div class="hero h-[300px]" style="background-image: url(./images/gdpr.jpg );">
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-black text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5 text-black">                      
+                        Do you have any projects?
+                        Contact us
+                    </p>
+                    <button class="btn btn-primary rounded-full bg-transparent text-black">Contact US</button>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content mt-20">
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a> 
+          <a class="link link-hover">Design</a> 
+          <a class="link link-hover">Marketing</a> 
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Jobs</a> 
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a> 
+          <a class="link link-hover">Privacy policy</a> 
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Get In Touch</header> 
+            <a class="link link-hover">
+                Don’t miss any updates of our new templates and extensions.!
+            </a> 
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-neutral">Subscribe</button>
+        </nav>
+      </footer> 
+      <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+        <aside class="items-center grid-flow-col">
+          <img src="./images/logo.png" alt="" class="w-[24px] h-[24px]">
+          <p>Simplex Solution Lt. <br/>Providing reliable tech since 2020</p>
+        </aside> 
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </nav>
+      </footer>
+</body>
+</html>
